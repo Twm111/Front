@@ -20,7 +20,7 @@ body {
 	color: var(--Dark-blue);
 }
 
-main {
+.qr-code {
 	width: 20%;
 	background-color: white;
 	display: flex;
