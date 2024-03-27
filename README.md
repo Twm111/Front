@@ -70,6 +70,7 @@ I've more in this project than I can tell. I think now I understand when people 
 				Coded by <a href="#">The wild man</a>.
 			</div>
 		</section>
+</main>
 ```
 
 
