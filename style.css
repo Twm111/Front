@@ -1,5 +1,12 @@
+:root {
+	--White: hsl(0, 0%, 100%);
+	--Light-gray: hsl(212, 45%, 89%);
+	--Grayish-blue: hsl(220, 15%, 55%);
+	--Dark-blue: hsl(218, 44%, 22%);
+}
+
 body {
-	background-color: hsl(212, 45%, 89%);
+	background-color: var(--Light-gray);
 	font-family: 'Outfit',sans-serif;
 	display: flex;
 	text-align: center;
@@ -10,89 +17,62 @@ body {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
+	color: var(--Dark-blue);
 }
 
 main {
-	width: 35%;
-	min-width: 250px;
-	height: 600px;
-	min-height: 120px;
+	width: 20%;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.qr-code {
-	background-color: white;
-	width: 85%;
-	height: 80%;
-	min-height: 150px;
-	min-width: 300px;
-	border-radius: 7%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	padding: 15px 6px 6px 6px;
+	margin: 0;
+	padding: 0.8em 0.3em 0 0.3em;
+	border-radius: 1em;
 }
 
 img {
 	width: 95%;
-	height: 70%;
-	min-height: 40%;
-	min-width: 70%;
-	border-radius: 7%;
-	object-fit: contain;
+	border-radius: 1em;
+	object-fit: cover;
+}
+
+h1 {
+	font-size: 1.4rem;
+	font-weight: bolder;
+}
+
+#text {
+	margin: 1em;
 }
 
 p {
-	color: hsl(212, 45%, 89%);
-	font-size: 15px;
+	color: var(--Grayish-blue);
+	font-size: 1em;
 	font-weight: 400;
 }
 
-.attribution {
-	position: absolute;
-	bottom: 12px;
+a {
+	color: var(--Grayish-blue);
 }
 
-@media screen and (max-width: 360px) {
-	body {
-		display: flex;
-		text-align: center;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100vw;
-		height: 100vh;
-		margin: auto;
-	}
 
+@media only screen and (max-width: 1024px) {
 	main {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.qr-code {
-		width: 60%;
-		height: 95%;
-		background-color: white;
-		border-radius: 7%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		padding: 15px 6px 6px 6px;
-	}
-	.img {
-		width: 75%;
-		height: 60%;
-		border-radius: 14%;
-		object-fit: contain;
+		width: 27%;
 	}
 }
 
-.attribution {
-	text-align: center;
+@media only screen and (max-width: 768px) {
+	main {
+		width: 35%;
+	}
+}
+
+
+@media only screen and (max-width: 425px){
+	main {
+		width: 60%;
+	}
 }
